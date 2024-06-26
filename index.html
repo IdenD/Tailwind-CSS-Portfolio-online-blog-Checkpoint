@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Section d'en-tête -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-6 px-4">
+      <h1 class="text-3xl font-bold">Sen Dev</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#accueil" class="text-gray-700 hover:text-gray-900">Accueil</a></li>
+          <li><a href="#projets" class="text-gray-700 hover:text-gray-900">Projets</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Héros -->
+  <section id="accueil" class="bg-cover bg-center h-screen  flex items-center" style="background-image: url('./6661.jpg');">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-slate-950">Bienvenue sur mon Portfolio</h2>
+      <p class="text-xl md:text-2xl text-rose-950">Je suis Edan, Développeur Web.</p>
+    </div>
+  </section>
+
+  <!-- Rubrique Compétences -->
+  <section id="competences" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Mes Compétences</h2>
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full md:w-1/3 px-2 mb-4">
+          <div class="bg-gray-200 p-6 rounded-lg text-center">
+            <h3 class="text-xl font-bold mb-2">HTML/CSS</h3>
+            <p>Création de sites web modernes et réactifs.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-2 mb-4">
+          <div class="bg-gray-200 p-6 rounded-lg text-center">
+            <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+            <p>Développement de fonctionnalités interactives.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-2 mb-4">
+          <div class="bg-gray-200 p-6 rounded-lg text-center">
+            <h3 class="text-xl font-bold mb-2">React</h3>
+            <p>Applications web dynamiques avec React.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Mes Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://img.freepik.com/photos-gratuite/chef-versant-sauce-speciale-cotes-porc-dans-cuisine_181624-61946.jpg?t=st=1719395726~exp=1719399326~hmac=a3679237b1f2187fbfea8df7f65ac47d3826389266f0511aac5ec5c9aed36022&w=900" alt="Site Vitrine Restaurant" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Site Vitrine Restaurant</h3>
+          <p>Un site vitrine pour un restaurant local, mettant en avant le menu, les heures d'ouverture, et les avis des clients. Utilisation de HTML, CSS et JavaScript pour une expérience utilisateur fluide et attrayante.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="To-do List React" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">To-do List avec React</h3>
+          <p>Une application de gestion de tâches développée avec React. Elle permet d'ajouter, de supprimer et de marquer des tâches comme terminées. Utilisation de React pour une interface utilisateur réactive et dynamique.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://img.freepik.com/photos-gratuite/employe-bureau-analysant-graphiques-commerciaux-ordinateur-documents-examinant-donnees-recherche-ligne-pour-creer-presentation-travailler-informations-rapport-statistiques-pc_482257-51736.jpg?t=st=1719395834~exp=1719399434~hmac=758bd236517ffc52865d905ac1fe7b27b683f4f38c6e068292fcd927446668d9&w=900" alt="Gestion de BD avec MongoDB" class="mb-4 rounded">
+          <h3 class="text-xl font-bold mb-2">Gestion de Base de Données avec MongoDB</h3>
+          <p>Un système de gestion de base de données utilisant MongoDB pour stocker et gérer les données. Ce projet inclut des fonctionnalités de création, de lecture, de mise à jour et de suppression (CRUD).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Formulaire de contact -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contactez-moi</h2>
+      <form class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-bold mb-2">Nom</label>
+          <input type="text" id="name" class="w-full px-3 py-2 border rounded-lg" placeholder="Votre nom">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-bold mb-2">E-mail</label>
+          <input type="email" id="email" class="w-full px-3 py-2 border rounded-lg" placeholder="Votre e-mail">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-bold mb-2">Message</label>
+          <textarea id="message" class="w-full px-3 py-2 border rounded-lg" rows="5" placeholder="Votre message"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bas de page -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <div class="mb-4">
+        <a href="#" class="mx-2 text-white hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-2 text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mx-2 text-white hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2024 Edan. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Inclusion de FontAwesome pour les icônes des réseaux sociaux -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
